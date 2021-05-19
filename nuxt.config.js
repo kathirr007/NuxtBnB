@@ -59,25 +59,24 @@ export default {
   publicRuntimeConfig: {
     auth: {
       cookieName: "idToken",
-      clientId:
-        "952132017083-to68rg93dp9ao68ulhim23853vhc3hvq.apps.googleusercontent.com",
+      clientId: process.env.authClientId,
     },
     algolia: {
-      appId: "CRH6AJ5VNU",
-      key: "ee31a7ef16046078ce766f08d1478e5e",
+      appId: process.env.algoliaAppId,
+      key: process.env.algoliaAppKey,
     },
     cloudinary: {
-      apiKey: "418971391689854",
+      apiKey: process.env.cloudinaryApiKey,
     },
   },
   privateRuntimeConfig: {
     algolia: {
-      appId: "CRH6AJ5VNU",
-      key: "ee31a7ef16046078ce766f08d1478e5e",
+      appId: process.env.algoliaAppId,
+      key: process.env.algoliaAppKey,
     },
     cloudinary: {
-      apiKey: "418971391689854",
-      apiSecret: "WJ5s6YQQEyIg9ZdHAiwohbLuP3U",
+      apiKey: process.env.cloudinaryApiKey,
+      apiSecret: process.env.cloudinaryApiSecret,
     },
   },
 };
